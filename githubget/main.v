@@ -99,6 +99,9 @@ fn main() {
             } 
             //println('$memb.login $repos.len')
             memb_with_repos++
+			if repos.len >= 30 {
+				println('$memb.login has $repos.len repos')
+			}
         }
 	}
     println('members with repos $memb_with_repos max stars $max_stars')
